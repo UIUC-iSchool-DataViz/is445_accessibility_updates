@@ -90,6 +90,58 @@ consuming information visually.
 
 # The Things I Want You To Take Away
 
+
+
+notes:
+This course *will* teach you some things about how to code, how to build
+visualizations, but we're going to focus much more on learning about how to
+construct visualizations and why we make the choices that we do.  If we choose
+one way to present data, does that convey information more readily?  Or does it
+get in the way of the underlying meaning?
+
+In particular...
+
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+
+
+notes:
+
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+ * I want you to know _some_ of the packages that are out there to visualize
+   data.  These will mostly be Python-based, with a couple in HTML/Javascript.
+
+
+notes:
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+ * I want you to know _some_ of the packages that are out there to visualize
+   data.  These will mostly be Python-based, with a couple in HTML/Javascript.
+ * You won't learn how to use dashboarding software (e.g. Tableau) in detail. Instead, we
+   will focus on the different operations that go into dashboarding software.
+
+notes:
+
+---
+
+# The Things I Want You To Take Away
+
  * You should know the basics of how to manipulate data -- aggregations,
    filterings, and other operations.
  * I want you to know _some_ of the packages that are out there to visualize
@@ -101,11 +153,8 @@ consuming information visually.
    interpret, critique and improve them.
 
 notes:
-This course *will* teach you some things about how to code, how to build
-visualizations, but we're going to focus much more on learning about how to
-construct visualizations and why we make the choices that we do.  If we choose
-one way to present data, does that convey information more readily?  Or does it
-get in the way of the underlying meaning?
+
+
 
 
 ---
@@ -480,12 +529,30 @@ So let's first talk about how misleading visualizations can be. This 3D pie char
 ---
 
 ### "Spurious Correlations" - tylervigen.com
+
+<!--
 <img src="images/spurious.png" alt="drawing" width="800" alt="Line chart showing time on the x-axis and swimming pool drownings on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
+-->
+<img src="images/nic_cage_nd_spurious.png" alt="drawing" width="700" alt="Line chart showing time on the x-axis (in years) and number of North Dakota security screeners on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
 
 notes:
 you can have a lot of absurd fun with data - but when data is presented in a visualization, people often believe the authority of it even if it's outlandish. 
 
 This guy has some good ideas of where to find sample datasets for upcoming homework assignments too!
+
+
+---
+
+### "Spurious Correlations" - tylervigen.com
+
+<img src="images/nic_cage_nd_spurious.png" alt="drawing" width="700" alt="Line chart showing time on the x-axis (in years) and number of North Dakota security screeners on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
+
+Also under each "more about" link some [fun examples of AI popular media posts](https://www.tylervigen.com/spurious/correlation/5837_the-number-of-movies-nicolas-cage-appeared-in_correlates-with_the-number-of-transportation-security-screeners-in-north-dakota) and even [AI-generated academic papers](https://www.tylervigen.com/spurious/research-papers/5837_nicolas-cage-on-stage-the-movie-craze-and-north-dakotas-screeners-raise.pdf).
+
+notes:
+there are updates with AI-generated materials as examples of how far we can take these things
+
+although, at least in this example, the fake academic article isn't super believable (for now!)
 
 ---
 
@@ -495,6 +562,16 @@ notes:
 Each of these bar chart examples are meant to show the same data. But you can see how they're a bit problematic.
 
 ---
+
+## Extra Credit Opportunity!
+
+Which of these graphs is the most accurate representation of the data?
+
+notes:
+**go to the qrcode and url for Q2!**
+
+---
+
 
 <!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
 

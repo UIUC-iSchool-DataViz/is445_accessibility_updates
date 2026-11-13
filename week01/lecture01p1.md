@@ -5,7 +5,6 @@ description: >-
   The syllabus for the course, along with discussions about "what"
   visualizations are, and how to orient yourself in the course.
 date: 2026-01-21
-class_webpage: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026
 ---
 
 <!-- JPN: also check links to all external images -->
@@ -26,16 +25,7 @@ we are on a land-grant institution, please see the link on the chancellors page 
 
 ## Absences/Emergencies/Illness Policies
 
-Please see the statement about policies related to Emergencies/Illness on [the Syllabus](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/syllabus.html)
-
-<!-- Please see the statement about policies related to Emergencies/Illness on the Syllabus: PAGE_CLASS_WEBPAGE /syllabus.html -->
-
-
-<!-- <a href={{site.url}}/{{site.baseurl}}/"syllabus.html">the Syllabus</a>.
--->
-<!--
-[on the Syllabus](https://uiuc-ischool-dataviz.github.io/{{baseurl}}/syllabus.html).
--->
+Please see the statement about policies related to Emergencies/Illness on [the Syllabus](COURSE_WEBPAGE/syllabus.html)
 
 ---
 
@@ -43,7 +33,7 @@ Please see the statement about policies related to Emergencies/Illness on [the S
 
 <!-- JPN, update! -->
 
-~50 for this course!
+~65 for this course!
 
 **Strategies:**
  * a total of \~10 hours of office hours (Prof+TA's) every week 
@@ -67,22 +57,14 @@ finally, we have several assignments that can be turned in as a group to allow f
 <!-- .slide: class="vertical_center" -->
 ## Basics
 
-<!-- JPN, update! -->
+<!-- Names/emails/office hours come from _data/class.yml -- edit them there -->
+
+COURSE_STAFF
+
+Course website: COURSE_WEBPAGE/
 
 
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Thursdays 12:30-2pm (online)
-
-TA: Lucian Li - `zilul2@illinois.edu`
- * Office Hours: Tuesdays and Thursdays, 5-7pm (online)
-
-TA: Gaozheng Liu - `gl11@illinois.edu`
- * Office Hours: Mondays and Fridays, 4-6pm (online)
-
-Course website: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/
-
-
-Online -- access through Zoom Meetings.
+<!-- Online - access through Zoom Meetings. -->
 
 notes: 
 
@@ -90,7 +72,7 @@ Here are some of those hours of office hours for you.  We are still working on f
 
 So you see that we have LOTS of office hours throughout the week -- this is with the idea that folks may be in and out of class as illness/etc happens (but hopefully doesn't!)
 
-**TA's introduce themselves if they are on Zoom**
+**TA's introduce themselves if they are on Zoom/in person**
 
 Again, we want to make sure there are lots of support for folks that have questions
 
@@ -100,17 +82,17 @@ Now, the website!
 
 ---
 
-<!-- JPN -- update! -->
+<!-- All of these links come from _data/class.yml -- edit them there -->
 
 ## In summary: where things will be located:
 
- * Canvas: https://canvas.illinois.edu/courses/64830 - where the grades and assignments links will be posted
+ * Canvas: COURSE_CANVAS - where the grades and assignments links will be posted
  
- * PrairieLearn: https://us.prairielearn.com/pl/course_instance/204190/assessments - where assignments will be completed
+ * PrairieLearn: COURSE_PRAIRIELEARN - where assignments will be completed
 
- * Course webpage: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/ - where lecture slides, notebooks, data & general course info will live.
+ * Course webpage: COURSE_WEBPAGE/ - where lecture slides, notebooks, data & general course info will live.
 
- * Slack: [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A) (workspace name is is445-ob-sp26) - the best place to ask questions in a `#homeworkX-questions` channel 
+ * Slack: [COURSE_SLACK](COURSE_SLACK_INVITE) (workspace name is COURSE_SLACK_WORKSPACE) - the best place to ask questions in a `#homeworkX-questions` channel 
  
 notes:
 
@@ -232,7 +214,7 @@ about these types of data, and how we approach visualizing them.
 
 <!-- JPN, update -->
 
-## In a breakout group (of ~4-5 people) 
+## In a group (of ~4-5 people) 
 
 Visualize the results of your group's collective "data".
 
@@ -243,7 +225,6 @@ Visualize the results of your group's collective "data".
 
 Don't forget to say hi to each other!
 
-Miro Board Link (check Zoom chat for password): https://miro.com/app/board/uXjVGMuxl6c=/?share_link_id=725801257421
 
 <!--
 Miro Board link: https://miro.com/app/board/uXjVLq47Pvc=/?share_link_id=451051165669
@@ -274,7 +255,7 @@ We have to do it!
 
 ## Syllabus
 
- * Week 1 (Today) - Introduction
+ * Week 1 - (Today) - Introduction
  * Week 2 - Data Storage and Operations
  * Week 3 - Types of Viz and Choosing Colors
  * Week 4 - Beginning interactivity
@@ -305,14 +286,16 @@ We might start getting into javascript earlier, depending on how we are doing.
 
 ## Syllabus, cont
 
- * Week 9 - Spring Break!  No class!
- * Week 10 - Viz Audience; Intro to Jekyll
- * Week 11 - More Jekyll+Altair+vega-lite things <-- Prof. Jill maybe gone, different modality
- * Week 12 - Intro to Streamlit 
- * Week 13 - Streamlit Apps in HuggingFace
- * Week 14 - A few more Streamlit+HuggingFace things; Publishing Viz
- * Week 15 - Scientific Viz & AVL Guest lecture (**partially flipped class**)
+ * Week 9 - Viz Audience; Intro to Jekyll
+<!-- * Week 10 - More Jekyll+Altair+vega-lite things <-- Prof. Jill maybe gone, different modality -->
+ * Week 10 - More Jekyll+Altair+vega-lite things 
+ * Week 11 - Intro to Streamlit 
+ * Week 12 - Streamlit Apps in HuggingFace
+ * Week 13 - A few more Streamlit+HuggingFace things; Publishing Viz
+ * Week 14 - Scientific Viz & AVL Guest lecture (**partially flipped class**)
+ * Week 15 - Fall Break!  No class!
  * Week 16 - Network Visualization & Word clouds (**flipped class**)
+ * Week 17 - Finish up final projects & a bit on PowerBI (**partially flipped class**)
 
 notes:
 Toward the end of class we are going to have a slightly more free-form set of
@@ -621,6 +604,10 @@ part of the syllabus quiz will be checking out the HW policies in more detail --
 are several assignments we will not drop ~~you must submit and get above a certain grade on to pass the class~~ -- these are installation assignments 
 and those that are considered "prepratory" for the final project
 
+
+
+
+
 ---
 
 ## Homeworks Summary
@@ -665,7 +652,7 @@ We will also have time in class, typically toward the end of class, for you to w
  * Graded automatically on PrairieLearn
  * Can be attempted multiple times *with decreasing scores*
  * ~10 Quizzes in the course 
- * Generally due on *Wednesdays* before class (but always double check the due dates!)
+ * Generally due on *Tuesdays* before class (but always double check the due dates!)
  
 notes:
 Quizzes are meant to be quick checks of the material covered in class
@@ -683,13 +670,13 @@ You can repeat quiz questions multiple times, however you will be peanalized for
  * Graded automatically on PrairieLearn
  * Can be attempted multiple times *with decreasing scores*
  * ~10 Quizzes in the course 
- * Generally due on *Wednesdays* before class (but always double check the due dates!)
+ * Generally due on *Tuesdays* before class (but always double check the due dates!)
 
 
  **If you see a 0% on PrairieLearn until a certain date this means you can "preview" the assignment, but should not submit it for credit (for Quizzes, this means don't open it yet!).**
  
 notes:
-There will be some assignments that say 0% before a certain date (we'll look at this when we check out our first homework assignmennt later in class)
+There will be some assignments that say 0% before a certain date (we'll look at this when we check out our first homework assignment later in class)
 
 this means you can "preview" the assignment, but you should submit it only after the 100% date 
 
@@ -704,7 +691,7 @@ don't open quizzes before the 100% date! it will start the quiz timer and you wo
 <!-- JPN come and change -->
 
 * Homeworks/Labs -- Fridays (generally)
-* Quizzes -- Wednesdays (generally)
+* Quizzes -- Tuesdays (generally)
 
 Canvas and PrairieLearn due dates *should* be in sync, but when in doubt *follow the PrairieLearn due dates*.
 
@@ -714,10 +701,100 @@ Canvas and PrairieLearn due dates *should* be in sync, but when in doubt *follow
 
 See the course syllabus: 
 
-https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/syllabus.html
+COURSE_WEBPAGE/syllabus.html
 
 notes:
 These are TOTally optional - more on that in a minute.
+
+
+---
+
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade)
+
+notes:
+
+---
+
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade)
+   * through QR-code "check in" surveys
+   * short answers on paper (please bring pen or pencil!)
+   * short Canvas/PrairieLearn assessments
+   * sign-in with i-Card (so be sure to bring this to class as well!)
+   * others, and combinations of the above
+
+**NO** i-Clicker required for this course.
+
+notes:
+
+we will have some opportunities for extra credit for being in class (in class, not attending via zoom online)
+
+these include doing a quick survey via a QR code, 
+
+or answering some short answers on paper -- so be sure to bring a writing implement!
+
+or there might be quick assignments on Canvas or prairielearn, or you might sign in using your icard so be sure to bring that as well
+
+we won't be requiring an iclicker though
+
+---
+
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade)
+   * through QR-code "check in" surveys
+   * short answers on paper (please bring pen or pencil!)
+   * short Canvas/PrairieLearn assessments
+   * sign-in with i-Card (so be sure to bring this to class as well!)
+   * others, and combinations of the above
+
+**NO** i-Clicker required for this course.
+
+**Doing in class-only assignments outside of class is an academic integrity violation, i.e. you'll get a FAIR (even if you do the assessment in class and then leave early/come in late without notifying the instructor).**
+
+
+notes:
+
+please note that all of these assessments will be accessible to you ONLY IF YOU ARE IN CLASS
+
+full disclosure -- some of them you can probably access outside of class, but we will occasionally double check that you are in class -- if we check that you were not in class but did one of the in-class only activities then this constitutes a FAIR violation
+
+we'll be doing activities at different times and checking attendance at different times so you'll be flagged if you leave early or come in late
+
+again, this is just **extra credit** -- you can still get an A without this, so 
+
+---
+
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade) 
+   * through QR-code "check in" surveys
+   * short answers on paper (please bring pen or pencil!)
+   * short Canvas/PrairieLearn assessments
+   * sign-in with i-Card (so be sure to bring this to class as well!)
+   * others, and combinations of the above
+
+**NO** i-Clicker required for this course.
+
+**Doing in class-only assignments outside of class is an academic integrity violation, i.e. you'll get a FAIR (even if you do the assessment in class and then leave early/come in late without notifying the instructor).**
+
+**You can get a good grade in the course without any extra credit.**
+
+
+notes:
+
+again, this is just **extra credit** -- you can still get a good grade in the course without doing the extra credit, the course is designed this way -- so please do not "fake" being in class when you are not -- nobody wants to go through the FAIR process!
 
 ---
 
@@ -736,6 +813,16 @@ you are working with other people in the group!
 Using snippets of code is fine -- but you may not copy large-scale amounts of
 code from other work (for example, other visualizations) and pass it off as
 your own.  Always cite, and be reasonable in what you utilize.
+
+
+---
+
+## Plagiarism
+
+ * Plagiarism is about copying ideas.
+ * Cite all code you utilize from elsewhere.  This includes AI -- if you use AI, provide the prompt, how you iterated and checked what was input/output.
+ 
+notes:
 
 
 ---
@@ -788,7 +875,7 @@ what they represent, not because they are the only paths to success.
 We will be sharing a slack channel with the in-person class, so feel free to
 converse with them as well!
 
- * Team channel at [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A) 
+ * Team channel at [COURSE_SLACK](COURSE_SLACK_INVITE) 
    * `#general` : General announcements, place to ask questions
    * `#random` : see a cool viz you want to share?  This is the place!
    * `#introductions` : where you want to "say hi" for Homework #1
@@ -838,7 +925,7 @@ personal messages on slack will be treated as email and we'll get back to you wi
 
 ## How do I access Slack?
 
- * Your @illinois email should be added, just go to: [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A)
+ * Your @illinois email should be added, just go to: [COURSE_SLACK](COURSE_SLACK_INVITE)
  * Send me an email with _your_ email
 
 ---
@@ -847,8 +934,8 @@ personal messages on slack will be treated as email and we'll get back to you wi
 
 <!-- JPN: check all these links -->
 
- * Course repo is at [UIUC-iSchool-DataViz/is445_obuobg_spring2026/](https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026/) 
- * Automatically built to [uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/](https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/)  
+ * Course repo is at [COURSE_GITHUB](COURSE_GITHUB) 
+ * Automatically built to [COURSE_WEBPAGE](COURSE_WEBPAGE)  
 
 notes:
 All the materials for this course will be stored in github, and are available
@@ -907,6 +994,14 @@ There are 3 pathways (that I can see in this course, could be more!)
        * come back to the optional texts/docs after the course is over
 
 ---
+## Let's try our first Extra Credit question!
+
+Which pathway are you thinking of using in this class?
+
+notes:
+**go to already set up question**
+
+---
 
 ## Other strategies for success
 
@@ -950,7 +1045,7 @@ a few other suggestions about how to do well in this course
 
 Let's look at:
 1. How to log onto Slack
-1. The syllabus quiz
+1. The syllabus/first lecture quiz
 1. The intake survey
 
 notes:

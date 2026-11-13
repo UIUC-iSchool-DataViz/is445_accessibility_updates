@@ -16,16 +16,24 @@ date: 2025-09-08
 
 ## How to get help
 
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Thursdays 12:30-2pm (online)
-
-TA: Lucian Li - `zilul2@illinois.edu`
- * Office Hours: Tuesdays and Thursdays, 5-7pm (online)
-
-TA: Gaozheng Liu - `gl11@illinois.edu`
- * Office Hours:  Mondays and Fridays, 4-6pm (online)
+COURSE_STAFF
 
 See Zoom Meeting Room on Canvas to access meeting links.
+
+
+ 
+Other: 
+ * Slack, email
+
+---
+
+## How to get help
+
+COURSE_STAFF
+
+See Zoom Meeting Room on Canvas to access meeting links.
+
+**My OH has to start a little later, but will see if I can't get there closer to 10:15am!**
 
  
 Other: 
@@ -35,13 +43,13 @@ Other:
 
 ## Where resources are be located
 
-* Canvas: https://canvas.illinois.edu/courses/64830 - where the grades and assignments links will be posted
+* Canvas: COURSE_CANVAS - where the grades and assignments links will be posted
  
-* PrairieLearn: https://us.prairielearn.com/pl/course_instance/204190/assessments - where assignments will be completed
+* PrairieLearn: COURSE_PRAIRIELEARN - where assignments will be completed
 
-* Course webpage: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/ - where lecture slides, notebooks, data & general course info will live.
+* Course webpage: COURSE_WEBPAGE/ - where lecture slides, notebooks, data & general course info will live.
 
-* Slack: [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A) (workspace name is is445-ob-sp26) - the best place to ask questions in a `#homeworkX-questions` channel 
+* Slack: [COURSE_SLACK](COURSE_SLACK_INVITE) (workspace name is COURSE_SLACK_WORKSPACE) - the best place to ask questions in a `#homeworkX-questions` channel 
    * all quiz questions on channel `#quiz-questions`
  
 notes:
@@ -69,9 +77,33 @@ and those that are considered "preparatory" for the final project
 
 ---
 
+## Opportunities for Extra Credit
+
+ * in the Homework category (toward the end of class)
+ * for the Final Project
+ * for in class participation (up to 3% of total grade) 
+   * through QR-code "check in" surveys
+   * short answers on paper (please bring pen or pencil!)
+   * short Canvas/PrairieLearn assessments
+   * sign-in with i-Card (so be sure to bring this to class as well!)
+   * others, and combinations of the above
+
+**NO** i-Clicker required for this course.
+
+**Doing in class-only assignments outside of class is an academic integrity violation, i.e. you'll get a FAIR (even if you do the assessment in class and then leave early/come in late without notifying the instructor).**
+
+**You can get a good grade in the course without any extra credit.**
+
+
+notes:
+
+again, this is just **extra credit** -- you can still get a good grade in the course without doing the extra credit, the course is designed this way -- so please do not "fake" being in class when you are not -- nobody wants to go through the FAIR process!
+
+---
+
 ## Assignment Listings
 
-Current assignment list on PrairieLearn: https://us.prairielearn.com/pl/course_instance/204190/assessments
+Current assignment list on PrairieLearn: COURSE_PRAIRIELEARN
  * caveat - 0% until official "assigned" week (or we are finished testing, see upper-left ? box)
 
 notes:
@@ -160,6 +192,13 @@ notes:
 today we're going to get some practice with the practicalities of dealing with data
 
 We'll talk a bit about the kinds of data that are out there and their definitions, and how many people disagree on these definitions!
+
+---
+
+## But first!  Let's revisit the histogram question from last time
+
+notes:
+**go to google doc**
 
 ---
 

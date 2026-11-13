@@ -20,12 +20,13 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveald3@2.0.0/reveald3.js"></script>
 
 
 
 </style>
 
-  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="/is445_bcu_fall2026/assets/styles.less" />
   </head>
 
   <body>
@@ -34,13 +35,18 @@
           <section class="titleslide">
               <h1>Lecture 3.2 - Colors and Color maps, Types of viz</h1>
               <h2>Jill Naiman</h2>
-              <h2>Data Visualization - Spring 2026</h2>
+              <h2>Data Visualization - Fall 2026</h2>
           </section>
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
-<br />
+
+
+
+
+
+
+<section data-markdown
+   data-separator="^\n---\n"
+   data-separator-vertical="^\n----\n">
+  <script type="text/template"><br />
 <br />
 <br />
 
@@ -370,6 +376,7 @@ which was the easiest one to do of these 3 images?
 
 we can make thinks more/less complex with this game (that is part of your optional reading for this week)
 
+**go through the javascript thing here!**
 
 ---
 
@@ -516,9 +523,9 @@ even if we try to make a perceptually uniform colormap, the results are underwhe
 
 ## Ordered: Sequential Colormaps
 
-![](/is445_obuobg_spring2026/week03/images/colors/blues_discrete.png)
+![](/is445_bcu_fall2026/week03/images/colors/blues_discrete.png)
 
-![](/is445_obuobg_spring2026/week03/images/colors/blues_continuous.png)
+![](/is445_bcu_fall2026/week03/images/colors/blues_continuous.png)
 
 notes:
 one thing we can due is choose a hue and change the saturation or luminance -- here luminance
@@ -531,9 +538,9 @@ Here, the hue doesn't change, but the value (luminance) and the saturation do
 
 ## Diverging Colormaps
 
-![](/is445_obuobg_spring2026/week03/images/colors/spectral_discrete.png)
+![](/is445_bcu_fall2026/week03/images/colors/spectral_discrete.png)
 
-![](/is445_obuobg_spring2026/week03/images/colors/spectral_continuous.png)
+![](/is445_bcu_fall2026/week03/images/colors/spectral_continuous.png)
 
 notes:
 this shows you that different colors in the rainbow have different perceived brightness.
@@ -567,9 +574,9 @@ The differnet colormaps pick out changes at different scales.  The colormap with
 
 ## Qualitative Colormaps
 
-![](/is445_obuobg_spring2026/week03/images/colors/set1_discrete.png)
+![](/is445_bcu_fall2026/week03/images/colors/set1_discrete.png)
 
-![](/is445_obuobg_spring2026/week03/images/colors/set1_continuous.png)
+![](/is445_bcu_fall2026/week03/images/colors/set1_continuous.png)
 
 notes:
 The blended areas of the continuous map here are kind of gross looking. This kind of random color map is best for categorical data that is NOT continuous.
@@ -579,7 +586,7 @@ The blended areas of the continuous map here are kind of gross looking. This kin
 ## Color Meaning
 
 <!--<img src="images/blackBodyColor2.png" width="600"/>-->
-![](/is445_obuobg_spring2026/week03/images/colors/blackbodyColor.png)
+![](/is445_bcu_fall2026/week03/images/colors/blackbodyColor.png)
 
 notes:
 Which end of this is hot and which end is cold? What do red and blue mean?
@@ -623,7 +630,7 @@ Also talks about CMYK -- mixes light, RGB is mixing pigments
 
 ## Palette Mapping
 
-![](/is445_obuobg_spring2026/week03/images/colors/set1_discrete.png)
+![](/is445_bcu_fall2026/week03/images/colors/set1_discrete.png)
 
 Assign each value to a specific color or element.
 
@@ -834,8 +841,9 @@ We'll spend some time messing with this image to try to understand how colors en
 
 
 
-          </script>
-        </section>
+  </script>
+</section>
+
       </div>
     </div>
 <script>
@@ -849,10 +857,7 @@ We'll spend some time messing with this image to try to understand how colors en
         width: 1024,
         height: 768,
         margin: 0.02,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
-        dependencies: [
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
-        ],
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, Reveald3 ],
 		keyboard: {
 		},
         center: false,

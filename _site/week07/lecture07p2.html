@@ -20,12 +20,13 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveald3@2.0.0/reveald3.js"></script>
 
 
 
 </style>
 
-  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="/is445_bcu_fall2026/assets/styles.less" />
   </head>
 
   <body>
@@ -34,13 +35,18 @@
           <section class="titleslide">
               <h1>Lecture 7.2 - Maps!</h1>
               <h2>Jill Naiman</h2>
-              <h2>Data Visualization - Spring 2026</h2>
+              <h2>Data Visualization - Fall 2026</h2>
           </section>
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
-## Lecture's Main Topics
+
+
+
+
+
+
+<section data-markdown
+   data-separator="^\n---\n"
+   data-separator-vertical="^\n----\n">
+  <script type="text/template">## Lecture's Main Topics
 
  * Maps - in more detail
    * Projections
@@ -345,7 +351,7 @@ Take care with:
 
 ## Maps: What to plot?
 
-![A map highlighting all landmasses on Earth (oceans in blue) with the words 'More people live in the green area than in the blue' as a title.](/is445_obuobg_spring2026/week07/images/moregreen.png)
+![A map highlighting all landmasses on Earth (oceans in blue) with the words 'More people live in the green area than in the blue' as a title.](/is445_bcu_fall2026/week07/images/moregreen.png)
 
 Source: [Terrible Maps Twitter](https://twitter.com/TerribleMaps?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
 
@@ -369,7 +375,7 @@ or, on the otherhand, it can be useful to give people a sense of even small geos
 
 ## Maps: What to plot?
 
-![A map which has been formatted to have the majority of the land masses at the edges while the oceans appear larger and in the center of the map.  The title says 'World map according to fish'.](/is445_obuobg_spring2026/week07/images/fishmap.png)
+![A map which has been formatted to have the majority of the land masses at the edges while the oceans appear larger and in the center of the map.  The title says 'World map according to fish'.](/is445_bcu_fall2026/week07/images/fishmap.png)
 
 notes:
 but it is important to think about projections since it is making use of a common visual encoding (sort of like how the temperature/battery/fill line encodings are used as metaphors for other types of data than temperature/battery/fill)
@@ -399,7 +405,7 @@ for this reason, it shows up in web development a lot
 
 ## GeoJSON
 
-<img src="https://www.avenza.com/wp-content/uploads/2017/01/image002-1.png" alt="Screenshot of the data layout of a GeoJSON file.  The EPSG code is highlighted as an extra element in this formatting.">
+<img src="../week02/images/geojson_example.png" alt="Screenshot of the data layout of a GeoJSON file.  The EPSG code is highlighted as an extra element in this formatting.">
 
 notes:
 geojson is just a special json formatting for geographical data
@@ -428,7 +434,7 @@ GeoJSON is:
 
 <div class="right" markdown=1>
 
-<img src="https://www.avenza.com/wp-content/uploads/2017/01/image002-1.png" alt="drawing" width="200" alt="Screenshot of the data layout of a GeoJSON file.  The EPSG code is highlighted as an extra element in this formatting."/>
+<img src="../week02/images/geojson_example.png" alt="drawing" width="300" alt="Screenshot of the data layout of a GeoJSON file.  The EPSG code is highlighted as an extra element in this formatting."/>
 
 </div>
 
@@ -624,8 +630,9 @@ Leaflet is another mechanism of plotting, displaying and interacting with maps.
 We will very briefly play with this in Python - could be of use for those that were having issues with cartopy.
 
 
-          </script>
-        </section>
+  </script>
+</section>
+
       </div>
     </div>
 <script>
@@ -639,10 +646,7 @@ We will very briefly play with this in Python - could be of use for those that w
         width: 1024,
         height: 768,
         margin: 0.02,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
-        dependencies: [
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
-        ],
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, Reveald3 ],
 		keyboard: {
 		},
         center: false,

@@ -22,6 +22,21 @@ These are typically processed the day after the Homework is due (typically Monda
 
 ---
 
+## Quick note about Extra Credit
+
+Category up, but won't be factored into your final grade until end of class because of Canvas weirdness.
+
+---
+
+## Due date mistakes
+
+A few later assignments are going to move around.
+
+notes:
+sorry for the mixup!  mostly quiz due dates changing but due dates got mixed up and just figured it out last night :|
+
+---
+
 ## Where we are: Last week
 
 <img src="images/dataviz_map_lastweek_take2.png" alt="A 'mind map' of last week's topics including introducing grammar of graphics and beginning interactivity.">
@@ -32,6 +47,22 @@ we also started working with the Grammar of Graphics and used bqplot declarative
 
 we also talked about different viz engines and you got to look at this in the HW
 
+---
+
+## Things we wanted to know more about
+
+1. declarative vs. imperative?  
+  * why?
+  * when to use what?
+2. bqplot docs?
+
+notes:
+
+1. a lot of questions/confusion about declarative vs. imperative -- this is normal! I also find this distinction a little weird, but it will start to make a bit more sense when we start getting to other online, less python-based visualization engines, we'll see some similarities like scales, marks, etc
+
+the motivation for starting bqplot in this new way is mostly so that when we then add some other elements like publishing online these ways of doing viz won't be so new to us
+
+2. check out the syllabus for bqplot docs!  There are version differences (we are using 0.12)
 
 ---
 

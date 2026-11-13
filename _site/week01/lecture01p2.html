@@ -20,12 +20,13 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveald3@2.0.0/reveald3.js"></script>
 
 
 
 </style>
 
-  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="/is445_bcu_fall2026/assets/styles.less" />
   </head>
 
   <body>
@@ -34,13 +35,18 @@
           <section class="titleslide">
               <h1>Lecture 1.2 - Why we Visualize</h1>
               <h2>Jill Naiman</h2>
-              <h2>Data Visualization - Spring 2026</h2>
+              <h2>Data Visualization - Fall 2026</h2>
           </section>
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
-<br />
+
+
+
+
+
+
+<section data-markdown
+   data-separator="^\n---\n"
+   data-separator-vertical="^\n----\n">
+  <script type="text/template"><br />
 <br />
 <br />
 
@@ -92,7 +98,7 @@ here is the overall diagram of the things we'll cover in this class -- you can s
  * What types of data do we visualize?
  * How do we visualize?
 
-![Image of a pie with a legend.  The legend shows empty pie-plate and the label is 'Pie I have eaten' and shows a pie for the label 'Pie I have not yet eaten'.](/is445_obuobg_spring2026/week01/images/pie.jpg)
+![Image of a pie with a legend.  The legend shows empty pie-plate and the label is 'Pie I have eaten' and shows a pie for the label 'Pie I have not yet eaten'.](/is445_bcu_fall2026/week01/images/pie.jpg)
 
 
 notes:
@@ -122,6 +128,58 @@ consuming information visually.
 
 # The Things I Want You To Take Away
 
+
+
+notes:
+This course *will* teach you some things about how to code, how to build
+visualizations, but we're going to focus much more on learning about how to
+construct visualizations and why we make the choices that we do.  If we choose
+one way to present data, does that convey information more readily?  Or does it
+get in the way of the underlying meaning?
+
+In particular...
+
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+
+
+notes:
+
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+ * I want you to know _some_ of the packages that are out there to visualize
+   data.  These will mostly be Python-based, with a couple in HTML/Javascript.
+
+
+notes:
+
+---
+
+# The Things I Want You To Take Away
+
+ * You should know the basics of how to manipulate data -- aggregations,
+   filterings, and other operations.
+ * I want you to know _some_ of the packages that are out there to visualize
+   data.  These will mostly be Python-based, with a couple in HTML/Javascript.
+ * You won't learn how to use dashboarding software (e.g. Tableau) in detail. Instead, we
+   will focus on the different operations that go into dashboarding software.
+
+notes:
+
+---
+
+# The Things I Want You To Take Away
+
  * You should know the basics of how to manipulate data -- aggregations,
    filterings, and other operations.
  * I want you to know _some_ of the packages that are out there to visualize
@@ -133,11 +191,8 @@ consuming information visually.
    interpret, critique and improve them.
 
 notes:
-This course *will* teach you some things about how to code, how to build
-visualizations, but we're going to focus much more on learning about how to
-construct visualizations and why we make the choices that we do.  If we choose
-one way to present data, does that convey information more readily?  Or does it
-get in the way of the underlying meaning?
+
+
 
 
 ---
@@ -428,7 +483,7 @@ Can you read the trends here at all?
 
 ---
 
-![Image of US GDP over time from the FRED interface.  The last highlighted period of time is from the recession of 2008.](/is445_obuobg_spring2026/week01/images/fredgraph.png)
+![Image of US GDP over time from the FRED interface.  The last highlighted period of time is from the recession of 2008.](/is445_bcu_fall2026/week01/images/fredgraph.png)
 
 notes:
 You might immediately notice a few things about this image, but one item that
@@ -504,7 +559,7 @@ We tell lies to visualize, but we _must_ be honest. (Stuart Levy, AVL)
 ---
 
 ### "The Principle of Proportional Ink" - callingbullshit.org
-![Three-dimensional pie chart.  The blue section for 'Android' appears much larger than the other sections (like 'iOS').](/is445_obuobg_spring2026/week01/images/proportionalInk.png)
+![Three-dimensional pie chart.  The blue section for 'Android' appears much larger than the other sections (like 'iOS').](/is445_bcu_fall2026/week01/images/proportionalInk.png)
 
 notes:
 So let's first talk about how misleading visualizations can be. This 3D pie chart violates the "principle of proportional ink" which states that the number of pixels that represent a value should be proportional to the value. With the raised edge on the pie chart, the blue wedge gets way more ink than it deserves and you get a disproportionate sense of value.
@@ -512,12 +567,30 @@ So let's first talk about how misleading visualizations can be. This 3D pie char
 ---
 
 ### "Spurious Correlations" - tylervigen.com
+
+<!--
 <img src="images/spurious.png" alt="drawing" width="800" alt="Line chart showing time on the x-axis and swimming pool drownings on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
+-->
+<img src="images/nic_cage_nd_spurious.png" alt="drawing" width="700" alt="Line chart showing time on the x-axis (in years) and number of North Dakota security screeners on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
 
 notes:
 you can have a lot of absurd fun with data - but when data is presented in a visualization, people often believe the authority of it even if it's outlandish. 
 
 This guy has some good ideas of where to find sample datasets for upcoming homework assignments too!
+
+
+---
+
+### "Spurious Correlations" - tylervigen.com
+
+<img src="images/nic_cage_nd_spurious.png" alt="drawing" width="700" alt="Line chart showing time on the x-axis (in years) and number of North Dakota security screeners on the left/red y-axis and films by Nicholas Cage on the right/black y-axis.  The two lines appear to follow each other closely.">
+
+Also under each "more about" link some [fun examples of AI popular media posts](https://www.tylervigen.com/spurious/correlation/5837_the-number-of-movies-nicolas-cage-appeared-in_correlates-with_the-number-of-transportation-security-screeners-in-north-dakota) and even [AI-generated academic papers](https://www.tylervigen.com/spurious/research-papers/5837_nicolas-cage-on-stage-the-movie-craze-and-north-dakotas-screeners-raise.pdf).
+
+notes:
+there are updates with AI-generated materials as examples of how far we can take these things
+
+although, at least in this example, the fake academic article isn't super believable (for now!)
 
 ---
 
@@ -527,6 +600,16 @@ notes:
 Each of these bar chart examples are meant to show the same data. But you can see how they're a bit problematic.
 
 ---
+
+## Extra Credit Opportunity!
+
+Which of these graphs is the most accurate representation of the data?
+
+notes:
+**go to the qrcode and url for Q2!**
+
+---
+
 
 <!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
 
@@ -585,7 +668,7 @@ notes: what goes into this representation
 
 <!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
 
-![](/is445_obuobg_spring2026/week01/images/doom_status.png)
+![](/is445_bcu_fall2026/week01/images/doom_status.png)
 
 ---
 
@@ -674,8 +757,9 @@ notes:
 
 
 
-          </script>
-        </section>
+  </script>
+</section>
+
       </div>
     </div>
 <script>
@@ -689,10 +773,7 @@ notes:
         width: 1024,
         height: 768,
         margin: 0.02,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
-        dependencies: [
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
-        ],
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, Reveald3 ],
 		keyboard: {
 		},
         center: false,

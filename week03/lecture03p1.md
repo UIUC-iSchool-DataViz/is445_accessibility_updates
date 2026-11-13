@@ -16,14 +16,7 @@ date: 2026-02--4
 
 ## How to get help
 
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Thursdays 12:30-2pm (online)
-
-TA: Lucian Li - `zilul2@illinois.edu`
- * Office Hours: Tuesdays and Thursdays, 5-7pm (online)
-
-TA: Gaozheng Liu - `gl11@illinois.edu`
- * Office Hours:  Mondays and Fridays, 4-6pm (online)
+COURSE_STAFF
 
 See Zoom Meeting Room on Canvas to access meeting links.
  
@@ -34,13 +27,13 @@ Other:
 
 ## Where resources are be located
 
-* Canvas: https://canvas.illinois.edu/courses/64830 - where the grades and assignments links will be posted
+* Canvas: COURSE_CANVAS - where the grades and assignments links will be posted
  
-* PrairieLearn: https://us.prairielearn.com/pl/course_instance/204190/assessments - where assignments will be completed
+* PrairieLearn: COURSE_PRAIRIELEARN - where assignments will be completed
 
-* Course webpage: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/ - where lecture slides, notebooks, data & general course info will live.
+* Course webpage: COURSE_WEBPAGE/ - where lecture slides, notebooks, data & general course info will live.
 
-* Slack: [https://is445-ob-sp26.slack.com/](https://join.slack.com/t/is445-ob-sp26/shared_invite/zt-3nlxwigx2-uAKm2J3UFFcPsSNZMLHr0A) (workspace name is is445-ob-sp26) - the best place to ask questions in a `#homeworkX-questions` channel 
+* Slack: [COURSE_SLACK](COURSE_SLACK_INVITE) (workspace name is COURSE_SLACK_WORKSPACE) - the best place to ask questions in a `#homeworkX-questions` channel 
    * all quiz questions on channel `#quiz-questions`
  
 notes:
@@ -57,6 +50,26 @@ Also, we will be utilizing Slack for discussing homeworks with a dedicated chann
 
 notes:
 last week we covered the data management and practical programming aspects of data viz
+
+---
+
+## Things we'd like to know more about
+
+Some themes:
+* more about plotting with matplotlib
+* more about plotting with other kinds of libraries 
+* what kinds of plots should we use? how to choose colors, markers, etc.?
+
+notes:
+thanks again for those that participated in the EC stuff last week!  here are some takeaways
+
+there are definitely more than I put up here, but I noticed a few themes to touch base about
+
+1. wanting to make more plots with matplotlib -- have no fear! we will do more of this in the coming weeks
+
+2. wanting to make plots with other libraries beyond matplotlib -- also have no fear! we'll explore that with bqplot for interactivity in a few weeks, and then streamlit and altair when we are building for the web.  We won't have time to cover ALL of the Python-based plotting libraries (like plotly, seaborn, folium, etc) since this is just an intro, but the idea is that after the course you'll have enough of a baseline to know what you're looking for and how to get started with a new package
+
+3. there where questions about how to know what is the "right" plot for a specific type of data and how to choose things like what colors, markers, etc -- we'll cover this in the coming weeks as well (starting today with color and general perception channels), but also when we get closer to the end of class and start thinking about the *audience* for your visualizations, because sometimes, based on what your audience *already knows* the answer to "what is best" will change
 
 ---
 

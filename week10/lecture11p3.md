@@ -1,0 +1,184 @@
+---
+title: Lecture 10.3 - Streamlit & Streamlit.io Introduction; VSCode
+layout: lecture
+description: >-
+ Streamlit, Streamlit.io, VSCode ecosystem
+date: 2025-11-03
+
+---
+
+## Altair
+
+```javascript
+
+brush = alt.selection_interval(encodings=['x','y'])
+
+chart1 = alt.Chart(mobility_url).mark_rect().encode(
+    alt.X("Student_teacher_ratio:Q", bin=alt.Bin(maxbins=10)),
+    alt.Y("State:O"),
+    alt.Color("count()")
+).properties(
+   height=400
+).add_params(
+        brush
+)
+
+chart2 = alt.Chart(mobility_url).mark_bar().encode(
+    alt.X("Mobility:Q", bin=True,axis=alt.Axis(title='Mobility Score')),
+    alt.Y('count()', axis=alt.Axis(title='Mobility Score Distribution'))
+).transform_filter(
+    brush
+)
+
+chart = (chart1.properties(width=300) | chart2.properties(width=300))
+
+chart
+```
+
+notes:
+just some reminders for what we worked on last time -- mostly with altair and making some initial dashboards
+
+---
+
+## Altair in Streamlit (in Streamlit.io & Jekyll)
+
+```javascript
+
+brush = alt.selection_interval(encodings=['x','y'])
+
+chart1 = alt.Chart(mobility_url).mark_rect().encode(
+    alt.X("Student_teacher_ratio:Q", bin=alt.Bin(maxbins=10)),
+    alt.Y("State:O"),
+    alt.Color("count()")
+).properties(
+   height=400
+).add_params(
+        brush
+)
+
+chart2 = alt.Chart(mobility_url).mark_bar().encode(
+    alt.X("Mobility:Q", bin=True,axis=alt.Axis(title='Mobility Score')),
+    alt.Y('count()', axis=alt.Axis(title='Mobility Score Distribution'))
+).transform_filter(
+    brush
+)
+
+chart = (chart1.properties(width=300) | chart2.properties(width=300))
+
+chart
+```
+
+How can we share our creations with the public?
+
+notes:
+so we can make some cool things but how can we share them with our audience?
+
+we started thinking a bit about this last time
+
+we'll discuss how to do this with Streamlit (and later Jekyll) in more detail today
+
+---
+
+## Streamlit
+
+[Streamlit](https://streamlit.io/) is a way to write "apps" in a Python script that can be hosted on the web.
+
+![A screenshot of the homepage of the Streamlit "hello world" example where a bit of code is used to generate a simple online application.](images/streamlit1.png)
+
+notes:
+where we see a simple example from the video linked above showing how Markdown as a string in Python is translated into headers and text on a page.
+
+---
+
+## Streamlit.io
+
+[Streamlit.io](https://streamlit.io/) is the platform we'll be using to host our interactive apps.
+
+<img src="images/streamlitio/streamlitiointro.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot of the landing page of the Streamlit.io platform">
+
+notes:
+Lab 8 is where you install a template, using the GitHub account you set up in Lab 4 (and also used in Lab 8)
+
+---
+
+## Streamlit.io
+
+[Streamlit.io](https://streamlit.io/) is the platform we'll be using to host our interactive apps.
+
+<img src="images/streamlitio/streamlitiointro.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot of the landing page of the Streamlit.io platform">
+
+We used the [HuggingFace](https://huggingface.co/) platform to do this last time (but they stopped allowing free hosting) so you may see references to this in prior notebooks.
+
+notes:
+Lab 8 is where you install a template, using the GitHub account you set up in Lab 4 (and also used in Lab 8)
+
+---
+
+## Apps with Streamlit.io
+
+[Streamlit.io allows for the sharing of interactive apps](https://share.streamlit.io/explore?category=favorites&sort=most+viewed).
+
+<img src="images/streamlitio/explorestreamlit.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot of the Explore page of the Streamlit.io website.">
+
+---
+
+## Streamlit in HuggingFace
+
+We'll learn how to build Altair visualizations like [this IS445 Demo](https://jnaiman-is445-demo.streamlit.app/).
+
+notes:
+**go to this page!!!**
+
+---
+
+## VSCode to develop apps
+
+We'll be using a new interface on PrairieLearn to develop code: VSCode
+
+<img src="images/vscode/vscode_view.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a VSCode instance on PrairieLearn.">
+
+---
+
+## VSCode to develop apps
+
+
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
+
+notes: 
+we talked a bit about this last week, but reminder -- you'll see now a browser VSCode workspace option for in class activities
+
+---
+
+## VSCode to develop apps
+
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
+
+If you want to install locally:
+* Install VSCode: https://code.visualstudio.com/download
+* Install local conda environment: COURSE_WEBPAGE/week01/installation_instructions.html
+
+
+notes: 
+if you want to install locally you'll have to figure out two steps
+
+---
+
+## VSCode to develop apps
+
+<img src="images/vscode/vscode_link.png" style="border: 2px solid black; padding: 4px;" alt="Screenshot a zoom-in of the PrairieLearn platform as listed as a link on the main Assessments tab.">
+
+If you want to install locally:
+* Install VSCode: https://code.visualstudio.com/download
+* Install local conda environment: COURSE_WEBPAGE/week01/installation_instructions.html
+
+We don't expect you to do any of this!  You can just use the VSCode workspaces provided for you on PrairieLearn.
+
+
+notes: 
+but we don't actually expect you to do this! you can use the VSCode workspaces spaces on PrarireLearn that already have the packages installed
+
+the only thing you really need installed locally is the Ruby/Jekyll/etc that we need for our Jekyll pages
+
+---
+
+## To Streamlit in Python!

@@ -20,12 +20,13 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/notes/notes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.0.2/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveald3@2.0.0/reveald3.js"></script>
 
 
 
 </style>
 
-  <link rel="stylesheet/less" type="text/css" href="/is445_obuobg_spring2026/assets/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="/is445_bcu_fall2026/assets/styles.less" />
   </head>
 
   <body>
@@ -34,23 +35,21 @@
           <section class="titleslide">
               <h1>Lecture 8.1 - Intro, Choosing your viz</h1>
               <h2>Jill Naiman</h2>
-              <h2>Data Visualization - Spring 2026</h2>
+              <h2>Data Visualization - Fall 2026</h2>
           </section>
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
-# "Temperature Taking" Quiz
+
+
+
+
+
+
+<section data-markdown
+   data-separator="^\n---\n"
+   data-separator-vertical="^\n----\n">
+  <script type="text/template"># "Temperature Taking" Quiz
 
 notes: 
 go over where this is!
-
----
-
-# Change of modality for class on 4/1
-
-notes:
-away! talk about what will go on
 
 ---
 
@@ -63,6 +62,17 @@ last week we discussed maps and mappable data
 
 ---
 
+## Things we'd like to know more about
+
+1. How to get my own data into maps?
+2. How to make more `bqplot`-looking graphs (i.e. more interactivity?)
+
+notes:
+1. there are some examples in the extra prep notebooks
+2. there are some examples of bqplot-maps in the extra prep notebooks, BUT we will also do some (probably easier) maps with vega-lite and Altair, so stay tuned!
+
+---
+
 ## This Week
 
 <img src="images/week08_thisweek.png" alt="Mind map of topics covered in class, including this week with the addition of Jekyll, Altair and vega-lite as new visualization engines and platforms.">
@@ -72,7 +82,7 @@ this week we'll start working toward some tools we'll use to start hosting some 
 
 Luckily, will all of our usage of bqplot and grammar of graphics we are well equipt to do this!
 
-in previous iterations of the class we used online notebook hosts called Iodide or Starboard to do this, but it is no longer supported so we are going to use a different method called ~~Starboard~~ Streamlit which we'll then host on Huggingface.
+in previous iterations of the class we used online notebook hosts called Iodide or Starboard to do this, but it is no longer supported so we are going to use a different method called ~~Starboard~~ Streamlit which we'll then host on ~~Huggingface~~ Streamlit.io.
 
 I've kept some of the links to old Iodide/Starboard prep notebooks in the extended resources in case you are curious, but it will be very similar to stuff we will be doing using ~~Starboard~~ Streamlit
 
@@ -260,8 +270,9 @@ notes:
 For hierarchical data, you can nest some of these other formats.
 
 
-          </script>
-        </section>
+  </script>
+</section>
+
       </div>
     </div>
 <script>
@@ -275,10 +286,7 @@ For hierarchical data, you can nest some of these other formats.
         width: 1024,
         height: 768,
         margin: 0.02,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
-        dependencies: [
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js'}
-        ],
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, Reveald3 ],
 		keyboard: {
 		},
         center: false,

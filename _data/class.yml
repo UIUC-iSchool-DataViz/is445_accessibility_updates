@@ -1,38 +1,104 @@
-instructor: 
+# ============================================================================
+# CHANGE THESE EVERY SEMESTER (part 2 of 2)
+#
+# This file is the single source of truth for who is teaching, what the course
+# is called, and every semester-specific link EXCEPT the course webpage and the
+# GitHub repo -- those two are derived from `baseurl` in _config.yml so the
+# semester repo name is only ever typed in one place.
+#
+# How to use these values:
+#
+#   * regular pages (index.md, syllabus.md, week*/index.md, _includes, _layouts):
+#     Liquid works, so read them directly --
+#       {{ site.data.class.course.semester }}
+#       {% for ta in site.data.class.tas %}{{ ta.name }}{% endfor %}
+#       {% assign canvas = site.data.class.urls | where: "id", "canvas" | first %}
+#       {{ canvas.url }}
+#
+#   * lecture slides (week*/lecture*.md):
+#     Liquid does NOT work there (reveal.js gets the raw markdown), so use the
+#     ALL-CAPS placeholders that _layouts/lecture.html substitutes --
+#       COURSE_WEBPAGE  COURSE_GITHUB    COURSE_NAME       COURSE_NUMBER
+#       COURSE_SEMESTER COURSE_SECTION   COURSE_CANVAS     COURSE_PRAIRIELEARN
+#       COURSE_SLACK    COURSE_SLACK_INVITE                COURSE_SLACK_WORKSPACE
+#       COURSE_STAFF    (instructor + all TAs w/ office hours, as a markdown list)
+#       COURSE_TAS      (comma-separated list of TA names)
+#       INSTRUCTOR_NAME INSTRUCTOR_EMAIL INSTRUCTOR_OFFICE_HOURS
+#       DUE_FINAL_SIGNUP DUE_FINAL_PART1 DUE_FINAL_PART2 DUE_FINAL_PART3
+#                       (final project due dates, from `due_dates:` below)
+#     To add a new placeholder, add one `replace:` line in _layouts/lecture.html.
+# ============================================================================
+
+instructor:
   name: Jill Naiman
   email: jnaiman@illinois.edu
   office: Online
-  office_hours: Thursdays, 12:30-2pm
+  office_hours: Thursdays, 10:30am-11:30am
+
+# Add/remove TAs here only -- the syllabus table and the lecture slides both
+# build their lists from this one.
 tas:
   -
-    name: Gaozheng Liu 
+    name: GaoZheng Liu
     email: gl11@illinois.edu
     office: online
-    office_hours: Mondays and Fridays, 4-6pm
+    office_hours: Mondays 3-4pm & Wednesdays 1-4pm
   -
-    name: Lucian Li 
+    name: Lucian Li
     email: zilul2@illinois.edu
     office: online
-    office_hours: Tuesdays and Thursdays, 5-7pm
+    office_hours: Tuesdays & Thursdays, 3-5pm
+  -
+    name: Xinhui Hu
+    email: xhu15@illinois.edu
+    office: online
+    office_hours: Mondays & Fridays, 9:30-11:30am
+
+# Class-wide due dates.  Only the lecture slides use these (via the DUE_*
+# placeholders above) -- they are deliberately not shown on any other page.
+# TODO Fall 2026: these are still the Spring dates.
+# note: When you add the Part 3 placeholders, a name that is the start of a longer one has to be replaced after the longer one. For example, DUE_FINAL_PART3_FEEDBACK must be replaced before DUE_FINAL_PART3, the same as COURSE_SLACK_INVITE before COURSE_SLACK
+due_dates:
+  final_signup: Nov 6    # final project group sign-up closes
+  final_part1: Nov 17     # Part 1: Viz for Self (individual)
+  final_part2: Dec 1     # Part 2: Viz for Peers (group)
+  final_part3: Dec 4 (for feedback), Dec 15 (final)   # Part 3: Viz for Others
 
 course:
   name: Data Visualization
   number: IS445
-  semester: Spring 2026
-  section: OBU-OBG
+  semester: Fall 2026
+  section: BU
   location: see Canvas
   time: see Canvas
   credit_hours: 4
+
+# Semester links.  `id` is how templates and slide placeholders find an entry;
+# `name` is the label shown in the syllabus table.  Entries with no `url:` are
+# derived from _config.yml (url + baseurl + githuburlbase) -- do not add a url
+# to those, or the repo name ends up written down twice.
 urls:
   -
+    id: slack
     name: Slack
-    url: https://is445-ob-sp26.slack.com
-  - 
+    url: https://is445-bu-fa26.slack.com
+    # workspace name students type when joining, and the shared-invite link
+    workspace: is445-bu-fa26
+    invite: https://is445-bu-fa26.slack.com
+  -
+    id: canvas
     name: Canvas
-    url: https://canvas.illinois.edu/courses/64830
+    url: https://canvas.illinois.edu/courses/70829
   -
+    id: prairielearn
+    name: PrairieLearn
+    # TODO Fall 2026: still points at the Spring 2026 course instance
+    url: https://us.prairielearn.com/pl/course_instance/225607/assessments
+  -
+    id: webpage
     name: Course Materials
-    url: https://uiuc-ischool-dataviz.github.io/is445_obuobg_spring2026/
+    # url derived from _config.yml: {{ site.url }}{{ site.baseurl }}
   -
+    id: github
     name: Github
-    url: https://github.com/UIUC-iSchool-DataViz/is445_obuobg_spring2026
+    # url derived from _config.yml: https://github.com/{{ site.githuburlbase }}{{ site.baseurl }}
