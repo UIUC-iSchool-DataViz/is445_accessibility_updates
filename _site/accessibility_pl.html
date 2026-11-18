@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>IS445 - Data Viz - BCU - Accessibility of PrairieLearn Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="/is445_bcu_fall2026/assets/style.css" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Accessibility of PrairieLearn Content | IS445 - Data Viz - BCU</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Accessibility of PrairieLearn Content" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="WCAG 2.1 conformance report for this course’s PrairieLearn assessments and questions" />
+<meta property="og:description" content="WCAG 2.1 conformance report for this course’s PrairieLearn assessments and questions" />
+<link rel="canonical" href="http://localhost:4009/is445_bcu_fall2026/accessibility_pl.html" />
+<meta property="og:url" content="http://localhost:4009/is445_bcu_fall2026/accessibility_pl.html" />
+<meta property="og:site_name" content="IS445 - Data Viz - BCU" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Accessibility of PrairieLearn Content" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"WCAG 2.1 conformance report for this course’s PrairieLearn assessments and questions","headline":"Accessibility of PrairieLearn Content","url":"http://localhost:4009/is445_bcu_fall2026/accessibility_pl.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+    <body>
+<header>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/is445_bcu_fall2026/" title="home" class="navbar-item">
+                    <span class="icon is-large">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    IS445
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    
+                    
+                    
+                    
+                    <a href="/is445_bcu_fall2026/syllabus" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fas fa-book"></i>
+                        </span>
+                        Syllabus
+                    </a>
+                    
+                    
+                    
+                    <a href="https://is445-bu-fa26.slack.com" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fab fa-slack"></i>
+                        </span>
+                        Slack
+                    </a>
+                    
+                    
+                    
+                    <a href="https://canvas.illinois.edu/courses/70829" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fas fa-school"></i>
+                        </span>
+                        Canvas
+                    </a>
+                    
+                    
+                    
+                    <a href="/is445_bcu_fall2026/accessibility_home" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fas fa-universal-access"></i>
+                        </span>
+                        Accessibility
+                    </a>
+                    
+                </div>
+                <div class="navbar-end">
+                    <!--<a href="https://github.com/pages/UIUC-iSchool-DataViz.github.io/is445_bcu_fall2026" class="navbar-item">-->
+                    <a href="https://github.com/UIUC-iSchool-DataViz/is445_bcu_fall2026" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</header>
+
+        <main>
+            <div class="container">
+                <div class="section">
+                    <div class="content">
+                        <h1>Accessibility of PrairieLearn Content</h1>
+                        
+<p>This is the report for the course’s PrairieLearn content. See also the
+<a href="/is445_bcu_fall2026/accessibility_home">accessibility overview</a> and the
+<a href="/is445_bcu_fall2026/accessibility">report for the course website</a>.</p>
+
+<h2 id="accessibility-statement">Accessibility Statement</h2>
+
+<p>Quizzes, labs, homeworks, and the final project for IS445 (Data Visualization) are
+delivered through <a href="https://www.prairielearn.com/">PrairieLearn</a>. This page documents how the
+assessments and questions we have written for PrairieLearn measure up against the
+<a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a> at Levels A
+and AA, including the places where they fall short.</p>
+
+<p>If any assessment is a barrier for you, please contact the instructor at
+<a href="mailto:jnaiman@illinois.edu">jnaiman@illinois.edu</a>. You do not need to wait for a fix: we will
+provide the assessment in a form that works for you.</p>
+
+<h2 id="conformance-report">Conformance Report</h2>
+
+<p>This report follows the structure of the
+<a href="https://www.itic.org/policy/accessibility/vpat">VPAT® 2.4Rev WCAG edition</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Name of product</strong></td>
+      <td>IS445 Data Visualization assessments on PrairieLearn, Fall 2026, section BU</td>
+    </tr>
+    <tr>
+      <td><strong>Location</strong></td>
+      <td>Course instance <code class="language-plaintext highlighter-rouge">Fa26BU</code> in the <a href="https://github.com/PrairieLearn/pl-is445"><code class="language-plaintext highlighter-rouge">pl-is445</code></a> course repository (access is limited to course staff)</td>
+    </tr>
+    <tr>
+      <td><strong>Report date</strong></td>
+      <td>November 2026</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>50 assessments that together use 183 questions: quizzes, labs, homeworks, extra credit, the final project, and ungraded in-class workspaces.</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Jill Naiman, <a href="mailto:jnaiman@illinois.edu">jnaiman@illinois.edu</a></td>
+    </tr>
+    <tr>
+      <td><strong>Standard</strong></td>
+      <td><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> Level A and Level AA</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="scope">Scope</h3>
+
+<p>The report covers the content the course staff wrote: the question text, figures, tables,
+and answer inputs of every question used by an assessment in this course instance, and the
+starter notebooks that open in workspaces.</p>
+
+<p>It does not cover the PrairieLearn platform itself (page layout, navigation, the standard
+question elements, grading messages). PrairieLearn publishes its own
+<a href="https://www.prairielearn.com/accessibility">conformance report</a>, and where a criterion is
+decided by the platform, the remarks below say so. It also does not cover the JupyterLab and
+VS Code applications that run inside workspaces, beyond the notes in the
+<a href="#workspaces">Workspaces</a> table.</p>
+
+<h3 id="evaluation-methods">Evaluation methods</h3>
+
+<p>Every assessment in <code class="language-plaintext highlighter-rouge">courseInstances/Fa26BU/assessments</code> was traced to the questions it
+uses, and the source of each of those 183 questions (<code class="language-plaintext highlighter-rouge">question.html</code>, <code class="language-plaintext highlighter-rouge">info.json</code>,
+<code class="language-plaintext highlighter-rouge">server.py</code>, and workspace notebooks) was reviewed. The questions break down as follows:
+83 multiple choice, 25 checkbox,
+7 dropdown, 6 drag-and-drop ordering,
+3 matching, 45 workspace, 14 with hand-written form
+controls, and a small number of text, number, and file-upload questions.</p>
+
+<p>The following have <strong>not</strong> yet been done, and ratings may change once they are:</p>
+
+<ul>
+  <li>opening each question in PrairieLearn as a student;</li>
+  <li>testing with a screen reader or with the keyboard only;</li>
+  <li>checking captions on linked recordings;</li>
+  <li>reviewing randomly generated variants of questions beyond their templates;</li>
+  <li>evaluating the workspace applications.</li>
+</ul>
+
+<h3 id="terms">Terms</h3>
+
+<p>The terms used in the “Conformance level” column are defined as follows:</p>
+
+<ul>
+  <li><strong>Supports</strong>: the content has at least one method that meets the criterion without known
+defects, or meets it with equivalent facilitation.</li>
+  <li><strong>Partially Supports</strong>: some content does not meet the criterion.</li>
+  <li><strong>Does Not Support</strong>: the majority of the content does not meet the criterion.</li>
+  <li><strong>Not Applicable</strong>: the criterion is not relevant to the content.</li>
+</ul>
+
+<h3 id="status">Status</h3>
+
+<p>The “Status” column in each table tracks our progress on that criterion. Each entry lists
+the questions to look at. Links go to the question’s folder in the course repository, and
+the link text is its path under <code class="language-plaintext highlighter-rouge">questions/</code>.</p>
+
+<ul>
+  <li><strong class="tag is-danger is-light">To do</strong> a known problem that nobody has started fixing. In the tables, write <code>s=&quot;todo&quot;</code>.</li>
+  <li><strong class="tag is-link is-light">In progress</strong> a fix has been started but is not finished. Write <code>s=&quot;progress&quot;</code>.</li>
+  <li><strong class="tag is-info is-light">Needs check</strong> no known problem, but the rating has not been confirmed by testing. Write <code>s=&quot;check&quot;</code>.</li>
+  <li><strong class="tag is-success is-light">Done</strong> fixed or confirmed. Write <code>s=&quot;done&quot;</code>.</li>
+  <li><strong class="tag">No action</strong> nothing to do. Write <code>s=&quot;none&quot;</code>.</li>
+</ul>
+
+<h3 id="table-1-success-criteria-level-a">Table 1: Success Criteria, Level A</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Conformance level</th>
+      <th>Remarks and explanations</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#non-text-content">1.1.1 Non-text Content</a></td>
+      <td>Partially Supports</td>
+      <td>Question pages contain 16 figures across 8 questions; 4 of them, in 4 questions, have no alternative text. Three of those are colour figures generated when the question is opened. Workspace notebooks contain 5 instructional images across 5 questions, none with alternative text.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_streamlit_setup_streamlitio/question.html"><code>LABS/lab_streamlit_setup_streamlitio</code></a>: add alt text to the figure</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/colormaps/question.html"><code>QUIZZES/colors2_andChannels/colormaps</code></a>: add alt text to the figure</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors1/easy_colors/question.html"><code>QUIZZES/colors1/easy_colors</code></a>: add alt text to the figure</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/harder_colors/question.html"><code>QUIZZES/colors2_andChannels/harder_colors</code></a>: add alt text to the figure</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage/workspace"><code>FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage</code></a>: notebook image without alt text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage/workspace"><code>FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage</code></a>: notebook image without alt text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook/workspace"><code>HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook</code></a>: notebook image without alt text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/week2_lab_wget/workspace"><code>LABS/week2_lab_wget</code></a>: notebook image without alt text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/week4_ipywidgets_plotting/workspace"><code>LABS/week4_ipywidgets_plotting</code></a>: notebook image without alt text</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded">1.2.1 Audio-only and Video-only (Prerecorded)</a></td>
+      <td>Not Applicable</td>
+      <td>No audio-only or video-only media is included in the questions.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#captions-prerecorded">1.2.2 Captions (Prerecorded)</a></td>
+      <td>Partially Supports</td>
+      <td>No video is embedded in a question. 3 questions link to recordings (course recordings on Illinois MediaSpace, and one YouTube video). Their captions have not yet been checked.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_github_pages_setup2/question.html"><code>LABS/lab_github_pages_setup2</code></a>: open each linked recording and check captions</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_installJekyllTemplate_dynamic/question.html"><code>LABS/lab_installJekyllTemplate_dynamic</code></a>: open each linked recording and check captions</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/prep_for_bqplot_lab/flipped_class/question.html"><code>QUIZZES/prep_for_bqplot_lab/flipped_class</code></a>: open each linked recording and check captions</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded">1.2.3 Audio Description or Media Alternative (Prerecorded)</a></td>
+      <td>Partially Supports</td>
+      <td>The linked recordings are not known to have audio description, and it has not been confirmed that the written instructions cover everything they show.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_github_pages_setup2/question.html"><code>LABS/lab_github_pages_setup2</code></a>: check the written instructions cover everything shown in the recording</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_installJekyllTemplate_dynamic/question.html"><code>LABS/lab_installJekyllTemplate_dynamic</code></a>: check the written instructions cover everything shown in the recording</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/prep_for_bqplot_lab/flipped_class/question.html"><code>QUIZZES/prep_for_bqplot_lab/flipped_class</code></a>: check the written instructions cover everything shown in the recording</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 Info and Relationships</a></td>
+      <td>Partially Supports</td>
+      <td>Multiple-choice, checkbox, and similar questions use PrairieLearn elements, which supply the structure. The intake survey questions correctly group their options with fieldsets, legends, and labels. Exceptions: 14 questions contain a grading rubric table with no header cells and several empty columns, and 3 questions imitate notebook cells using visual styling only.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="#questions-to-check">Questions to check (table below): every row marked "table without header cells"</a></li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/deleting_grade/question.html"><code>QUIZZES/pl_autograder_issues/deleting_grade</code></a>: mock notebook cells</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/grade_libraries/question.html"><code>QUIZZES/pl_autograder_issues/grade_libraries</code></a>: mock notebook cells</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/renaming_vars/question.html"><code>QUIZZES/pl_autograder_issues/renaming_vars</code></a>: mock notebook cells</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#meaningful-sequence">1.3.2 Meaningful Sequence</a></td>
+      <td>Supports</td>
+      <td>Question content is written in reading order.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#sensory-characteristics">1.3.3 Sensory Characteristics</a></td>
+      <td>Supports</td>
+      <td>No instruction was found that relies on shape, colour, or position alone. References such as “the figure below” follow the reading order. Not yet confirmed by reading every question in PrairieLearn.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="#questions-to-check">Questions to check (table below)</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#use-of-color">1.4.1 Use of Color</a></td>
+      <td>Partially Supports</td>
+      <td>3 quiz questions ask students to identify a colour or colour map from a figure, so they cannot be answered without colour vision. Identifying colours is part of what the course teaches, but these questions currently have no alternative form. Rubric tables use alternating row colours for decoration only.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors1/easy_colors/question.html"><code>QUIZZES/colors1/easy_colors</code></a>: decide on an alternative form of this question</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/harder_colors/question.html"><code>QUIZZES/colors2_andChannels/harder_colors</code></a>: decide on an alternative form of this question</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/colormaps/question.html"><code>QUIZZES/colors2_andChannels/colormaps</code></a>: decide on an alternative form of this question</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#audio-control">1.4.2 Audio Control</a></td>
+      <td>Not Applicable</td>
+      <td>No audio plays automatically.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#keyboard">2.1.1 Keyboard</a></td>
+      <td>Partially Supports</td>
+      <td>Multiple-choice, checkbox, dropdown, matching, and text-entry questions can be answered from the keyboard. 6 questions use drag-and-drop ordering, whose keyboard operation has not yet been confirmed. 45 questions open a workspace (JupyterLab or VS Code in the browser); these can be driven from the keyboard, but interactive charts that students build with bqplot, ipywidgets, and Altair respond mainly to the mouse. PrairieLearn itself reports this criterion as partially supported.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/syllabus_quiz/assignment_order/question.html"><code>HOMEWORKS/module1_courseIntro/syllabus_quiz/assignment_order</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/perception_channels_order/question.html"><code>QUIZZES/colors2_andChannels/perception_channels_order</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/order_gog/question.html"><code>QUIZZES/grammar_of_graphics/order_gog</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/hand_wavy_web_intro/dom_intro/question.html"><code>QUIZZES/hand_wavy_web_intro/dom_intro</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_order/question.html"><code>QUIZZES/vizaudience/viz_order</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/threeD_geometry/rendering_order/question.html"><code>QUIZZES/threeD_geometry/rendering_order</code></a>: drag-and-drop ordering: test with keyboard only</li><li><a href="#workspaces">Workspaces (table below)</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap">2.1.2 No Keyboard Trap</a></td>
+      <td>Supports</td>
+      <td>Code editors in the workspaces capture the Tab key for indenting; JupyterLab and VS Code each provide a documented key to leave the editor (Escape, and Ctrl+M, respectively).</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="#workspaces">Workspaces (table below): confirm by keyboard-only testing</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts">2.1.4 Character Key Shortcuts</a></td>
+      <td>Supports</td>
+      <td>Question pages add no shortcuts. JupyterLab single-key shortcuts work only while a notebook cell has focus.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable</a></td>
+      <td>Supports</td>
+      <td>No assessment in this course instance has a time limit. Due dates are set per assessment and can be extended for individual students.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#pause-stop-hide">2.2.2 Pause, Stop, Hide</a></td>
+      <td>Not Applicable</td>
+      <td>Question pages contain no moving, blinking, or auto-updating content.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold">2.3.1 Three Flashes or Below Threshold</a></td>
+      <td>Supports</td>
+      <td>No flashing content.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks">2.4.1 Bypass Blocks</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#page-titled">2.4.2 Page Titled</a></td>
+      <td>Supports</td>
+      <td>Every assessment and question has a title. The 14 in-class notebook assessments share one title and are told apart by their number.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#focus-order">2.4.3 Focus Order</a></td>
+      <td>Supports</td>
+      <td>Inputs appear in the source in the order they are meant to be answered.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">2.4.4 Link Purpose (In Context)</a></td>
+      <td>Partially Supports</td>
+      <td>Most links have descriptive text. 5 questions contain a link whose text is only “here” or “link”.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage/question.html"><code>FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage</code></a>: reword the link text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage/question.html"><code>FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage</code></a>: reword the link text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_misc/question.html"><code>HOMEWORKS/module1_courseIntro/survey/survey_dv_misc</code></a>: reword the link text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/urllink/question.html"><code>HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/urllink</code></a>: reword the link text</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook/question.html"><code>HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook</code></a>: reword the link text</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#pointer-gestures">2.5.1 Pointer Gestures</a></td>
+      <td>Supports</td>
+      <td>No question requires a multi-point or path-based gesture. Drag-and-drop ordering is covered under 2.1.1.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation">2.5.2 Pointer Cancellation</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#label-in-name">2.5.3 Label in Name</a></td>
+      <td>Supports</td>
+      <td>Controls take their names from their visible labels.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#motion-actuation">2.5.4 Motion Actuation</a></td>
+      <td>Not Applicable</td>
+      <td>Nothing is operated by moving the device.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#language-of-page">3.1.1 Language of Page</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#on-focus">3.2.1 On Focus</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#on-input">3.2.2 On Input</a></td>
+      <td>Supports</td>
+      <td>Choosing an answer does not submit it; students submit with the Save or Save and Grade buttons.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#error-identification">3.3.1 Error Identification</a></td>
+      <td>Supports</td>
+      <td>PrairieLearn reports invalid or missing answers in text next to the input. The hand-written survey and URL inputs accept any text and have no error states.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#labels-or-instructions">3.3.2 Labels or Instructions</a></td>
+      <td>Supports</td>
+      <td>Every text and number input has a label, and the 14 questions with hand-written form controls label them correctly. The 7 dropdown questions place the dropdown inside a sentence; how a screen reader announces them has not been confirmed. PrairieLearn itself reports this criterion as partially supported.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/intro_lecture/dv_is/question.html"><code>QUIZZES/intro_lecture/dv_is</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/bqplot_is/question.html"><code>QUIZZES/grammar_of_graphics/bqplot_is</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/matplotlib_is/question.html"><code>QUIZZES/grammar_of_graphics/matplotlib_is</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/vegalite_is/question.html"><code>QUIZZES/grammar_of_graphics/vegalite_is</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vega_lite/is_it_decl/question.html"><code>QUIZZES/vega_lite/is_it_decl</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_with_labels/question.html"><code>QUIZZES/vizaudience/viz_with_labels</code></a>: check how the dropdown is announced</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_dashboard/question.html"><code>QUIZZES/vizaudience/viz_dashboard</code></a>: check how the dropdown is announced</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#parsing">4.1.1 Parsing</a></td>
+      <td>Supports</td>
+      <td>Per the <a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">W3C’s 2023 note on this criterion</a>, it is treated as always satisfied for HTML content. The rubric tables and one colour question use obsolete markup (bgcolor, font) that should be replaced when they are next edited.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Role, Value</a></td>
+      <td>Supports</td>
+      <td>Questions use PrairieLearn elements and standard HTML form controls, which expose their names, roles, and values. Not yet confirmed with a screen reader.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_familiarity/question.html"><code>HOMEWORKS/module1_courseIntro/survey/survey_dv_familiarity</code></a>: intake survey: test with a screen reader</li><li><a href="#questions-to-check">Questions to check (table below)</a></li></ul></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="table-2-success-criteria-level-aa">Table 2: Success Criteria, Level AA</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Conformance level</th>
+      <th>Remarks and explanations</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#captions-live">1.2.4 Captions (Live)</a></td>
+      <td>Not Applicable</td>
+      <td>No live media.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded">1.2.5 Audio Description (Prerecorded)</a></td>
+      <td>Partially Supports</td>
+      <td>The linked recordings are not known to have audio description.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_github_pages_setup2/question.html"><code>LABS/lab_github_pages_setup2</code></a></li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_installJekyllTemplate_dynamic/question.html"><code>LABS/lab_installJekyllTemplate_dynamic</code></a></li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/prep_for_bqplot_lab/flipped_class/question.html"><code>QUIZZES/prep_for_bqplot_lab/flipped_class</code></a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#orientation">1.3.4 Orientation</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose">1.3.5 Identify Input Purpose</a></td>
+      <td>Not Applicable</td>
+      <td>No question collects the kinds of personal information this criterion lists.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">1.4.3 Contrast (Minimum)</a></td>
+      <td>Partially Supports</td>
+      <td>Question text uses PrairieLearn’s default colours. Exceptions: one colour question shows each answer choice in its own colour on a black background, and some of those combinations fall below 4.5:1; rubric tables use 12-pixel dark text on a mid-grey background (about 4.1:1).</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/harder_colors/question.html"><code>QUIZZES/colors2_andChannels/harder_colors</code></a>: coloured answer text on black</li><li><a href="#questions-to-check">Questions to check (table below): every row marked "table without header cells"</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#resize-text">1.4.4 Resize Text</a></td>
+      <td>Supports</td>
+      <td>Question text is set by PrairieLearn and scales with browser zoom. Rubric tables and mock notebook cells set fixed 12 to 13 pixel text, which still scales with zoom.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#images-of-text">1.4.5 Images of Text</a></td>
+      <td>Supports</td>
+      <td>Figures are screenshots of software, where the appearance is the point. Code is given as text.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/logon_slack/question.html"><code>HOMEWORKS/module1_courseIntro/logon_slack</code></a>: confirm each screenshot needs to be an image</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/hw1_changeWorkbook/question.html"><code>HOMEWORKS/module1_courseIntro/hw1_changeWorkbook</code></a>: confirm each screenshot needs to be an image</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_installJekyllTemplate_dynamic/question.html"><code>LABS/lab_installJekyllTemplate_dynamic</code></a>: confirm each screenshot needs to be an image</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_streamlit_setup_streamlitio/question.html"><code>LABS/lab_streamlit_setup_streamlitio</code></a>: confirm each screenshot needs to be an image</li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/course_policies/pl_question_mark_meaning/question.html"><code>QUIZZES/course_policies/pl_question_mark_meaning</code></a>: confirm each screenshot needs to be an image</li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#reflow">1.4.10 Reflow</a></td>
+      <td>Partially Supports</td>
+      <td>Standard questions reflow with the PrairieLearn page. Rubric tables are eight columns wide and need horizontal scrolling on narrow screens. Workspaces (JupyterLab, VS Code) are full applications that need a wide window.</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong><ul><li><a href="#questions-to-check">Questions to check (table below): every row marked "table without header cells"</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">1.4.11 Non-text Contrast</a></td>
+      <td>Supports</td>
+      <td>Controls are PrairieLearn’s. The generated colour figures have not been measured.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors1/easy_colors/question.html"><code>QUIZZES/colors1/easy_colors</code></a></li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/harder_colors/question.html"><code>QUIZZES/colors2_andChannels/harder_colors</code></a></li><li><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/colormaps/question.html"><code>QUIZZES/colors2_andChannels/colormaps</code></a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#text-spacing">1.4.12 Text Spacing</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus">1.4.13 Content on Hover or Focus</a></td>
+      <td>Partially Supports</td>
+      <td>Question content adds no pop-up content. PrairieLearn itself reports this criterion as partially supported because of its own tooltips.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#multiple-ways">2.4.5 Multiple Ways</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">2.4.6 Headings and Labels</a></td>
+      <td>Supports</td>
+      <td>Longer questions (labs, homeworks, final project) are divided with descriptive headings; short quiz questions need none.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#focus-visible">2.4.7 Focus Visible</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#language-of-parts">3.1.2 Language of Parts</a></td>
+      <td>Supports</td>
+      <td>Question content is in English.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#consistent-navigation">3.2.3 Consistent Navigation</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#consistent-identification">3.2.4 Consistent Identification</a></td>
+      <td>Supports</td>
+      <td>Assessments are named consistently by set and number (Quiz, Lab, Homework).</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#error-suggestion">3.3.3 Error Suggestion</a></td>
+      <td>Supports</td>
+      <td>Set by the PrairieLearn platform; see its report.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data">3.3.4 Error Prevention (Legal, Financial, Data)</a></td>
+      <td>Supports</td>
+      <td>Answers can be saved and changed before grading. Homework-type assessments allow further attempts; quizzes ask for confirmation before they are finished.</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong><ul><li><a href="#assessments-reviewed">Assessments reviewed (table below): confirm the ten Exam-type assessments</a></li></ul></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3 Status Messages</a></td>
+      <td>Supports</td>
+      <td>Grading results and workspace status are announced by PrairieLearn.</td>
+      <td><strong class="tag status-none">No action</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="questions-to-check">Questions to check</h3>
+
+<p>The 45 questions where the review found something to fix or confirm. The other
+138 questions are standard multiple-choice, checkbox, matching, or workspace
+questions with nothing flagged.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Used in</th>
+      <th>What to check</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/extra_credit/sciviz/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/extra_credit/sciviz</code></a></td>
+      <td>Extra Credit 1</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/extra_credit/word_text_data/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/extra_credit/word_text_data</code></a></td>
+      <td>Extra Credit 2</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part1/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part1</code></a></td>
+      <td>Final Project 1</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part2_workspaceSP26/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part2_workspaceSP26</code></a></td>
+      <td>Final Project 2</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.1_streamlit_streamlitio/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part3.1_streamlit_streamlitio</code></a></td>
+      <td>Final Project 3.1</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part3.1_jekyllwebpage</code></a></td>
+      <td>Final Project 3.1</td>
+      <td>notebook image without alt text; table without header cells; link text “here” or “link”</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.4_streamlit_streamlitio/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part3.4_streamlit_streamlitio</code></a></td>
+      <td>Final Project 3.4</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage/question.html"><code class="language-plaintext highlighter-rouge">FINAL_PROJECT/finalProject_Part3.4_jekyllwebpage</code></a></td>
+      <td>Final Project 3.4</td>
+      <td>notebook image without alt text; table without header cells; link text “here” or “link”</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/syllabus_quiz/assignment_order/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/syllabus_quiz/assignment_order</code></a></td>
+      <td>Homework 1</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_familiarity/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_familiarity</code></a></td>
+      <td>Homework 1</td>
+      <td>hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_computer/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_computer</code></a></td>
+      <td>Homework 1</td>
+      <td>hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_programming/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_programming</code></a></td>
+      <td>Homework 1</td>
+      <td>hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_misc/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_misc</code></a></td>
+      <td>Homework 1</td>
+      <td>link text “here” or “link”; hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_classgoals/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_classgoals</code></a></td>
+      <td>Homework 1</td>
+      <td>hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module1_courseIntro/survey/survey_dv_anythingelse/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module1_courseIntro/survey/survey_dv_anythingelse</code></a></td>
+      <td>Homework 1</td>
+      <td>hand-written form controls: test with a screen reader</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module3_colorsAndImages/hw2_images_and_colors/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module3_colorsAndImages/hw2_images_and_colors</code></a></td>
+      <td>Homework 2</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module4_ipywidgets/hw3_widgets/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module4_ipywidgets/hw3_widgets</code></a></td>
+      <td>Homework 3</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module7_maps/hw8_maps/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module7_maps/hw8_maps</code></a></td>
+      <td>Homework 4</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/urllink/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/urllink</code></a></td>
+      <td>Homework 5</td>
+      <td>table without header cells; link text “here” or “link”</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module9_altairJekyllIntro/hw6_jekyllwebpage/notebook</code></a></td>
+      <td>Homework 5</td>
+      <td>notebook image without alt text; table without header cells; link text “here” or “link”</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/HOMEWORKS/module10_streamlit/hw5_streamlit/submit_url_streamlitio/question.html"><code class="language-plaintext highlighter-rouge">HOMEWORKS/module10_streamlit/hw5_streamlit/submit_url_streamlitio</code></a></td>
+      <td>Homework 6</td>
+      <td>table without header cells</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/week2_lab_wget/question.html"><code class="language-plaintext highlighter-rouge">LABS/week2_lab_wget</code></a></td>
+      <td>Lab 2</td>
+      <td>notebook image without alt text</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/week4_ipywidgets_plotting/question.html"><code class="language-plaintext highlighter-rouge">LABS/week4_ipywidgets_plotting</code></a></td>
+      <td>Lab 3</td>
+      <td>notebook image without alt text</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_github_pages_setup2/question.html"><code class="language-plaintext highlighter-rouge">LABS/lab_github_pages_setup2</code></a></td>
+      <td>Lab 4</td>
+      <td>links to a recording: check captions</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_installJekyllTemplate_dynamic/question.html"><code class="language-plaintext highlighter-rouge">LABS/lab_installJekyllTemplate_dynamic</code></a></td>
+      <td>Lab 6</td>
+      <td>links to a recording: check captions</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/LABS/lab_streamlit_setup_streamlitio/question.html"><code class="language-plaintext highlighter-rouge">LABS/lab_streamlit_setup_streamlitio</code></a></td>
+      <td>Lab 8</td>
+      <td>figure without alt text</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/intro_lecture/dv_is/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/intro_lecture/dv_is</code></a></td>
+      <td>Quiz 1</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/deleting_grade/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/pl_autograder_issues/deleting_grade</code></a></td>
+      <td>Quiz 1</td>
+      <td>mock notebook cells built from styled blocks</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/grade_libraries/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/pl_autograder_issues/grade_libraries</code></a></td>
+      <td>Quiz 1</td>
+      <td>mock notebook cells built from styled blocks</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/pl_autograder_issues/renaming_vars/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/pl_autograder_issues/renaming_vars</code></a></td>
+      <td>Quiz 1</td>
+      <td>mock notebook cells built from styled blocks</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/colormaps/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/colors2_andChannels/colormaps</code></a></td>
+      <td>Quiz 2</td>
+      <td>figure without alt text; depends on colour perception</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/perception_channels_order/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/colors2_andChannels/perception_channels_order</code></a></td>
+      <td>Quiz 2</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors1/easy_colors/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/colors1/easy_colors</code></a></td>
+      <td>Quiz 2</td>
+      <td>figure without alt text; depends on colour perception</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/colors2_andChannels/harder_colors/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/colors2_andChannels/harder_colors</code></a></td>
+      <td>Quiz 2</td>
+      <td>figure without alt text; depends on colour perception</td>
+      <td><strong class="tag is-danger is-light status-todo">To do</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/bqplot_is/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/grammar_of_graphics/bqplot_is</code></a></td>
+      <td>Quiz 3</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/matplotlib_is/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/grammar_of_graphics/matplotlib_is</code></a></td>
+      <td>Quiz 3</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/order_gog/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/grammar_of_graphics/order_gog</code></a></td>
+      <td>Quiz 3</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/grammar_of_graphics/vegalite_is/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/grammar_of_graphics/vegalite_is</code></a></td>
+      <td>Quiz 3</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/prep_for_bqplot_lab/flipped_class/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/prep_for_bqplot_lab/flipped_class</code></a></td>
+      <td>Quiz 3</td>
+      <td>links to a recording: check captions</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vega_lite/is_it_decl/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/vega_lite/is_it_decl</code></a></td>
+      <td>Quiz 5</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/hand_wavy_web_intro/dom_intro/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/hand_wavy_web_intro/dom_intro</code></a></td>
+      <td>Quiz 5</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_order/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/vizaudience/viz_order</code></a></td>
+      <td>Quiz 7</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_with_labels/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/vizaudience/viz_with_labels</code></a></td>
+      <td>Quiz 7</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/vizaudience/viz_dashboard/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/vizaudience/viz_dashboard</code></a></td>
+      <td>Quiz 7</td>
+      <td>dropdown inside a sentence: check how it is announced</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/questions/QUIZZES/threeD_geometry/rendering_order/question.html"><code class="language-plaintext highlighter-rouge">QUIZZES/threeD_geometry/rendering_order</code></a></td>
+      <td>Quiz 8</td>
+      <td>drag-and-drop ordering: check keyboard use</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="workspaces">Workspaces</h3>
+
+<p>45 questions open a workspace built from one of these Docker images. The
+applications inside them have not been evaluated.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Workspace image</th>
+      <th>Application</th>
+      <th>Questions</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445-sp25</code></td>
+      <td>JupyterLab</td>
+      <td>16</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445-fa26</code></td>
+      <td>JupyterLab</td>
+      <td>15</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445-vscode</code></td>
+      <td>VS Code</td>
+      <td>8</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445</code></td>
+      <td>JupyterLab</td>
+      <td>3</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445-sp26</code></td>
+      <td>JupyterLab</td>
+      <td>2</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">jnaiman/workspace-is445-nodownload</code></td>
+      <td>JupyterLab</td>
+      <td>1</td>
+      <td><strong class="tag is-info is-light status-check">Needs check</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="assessments-reviewed">Assessments reviewed</h3>
+
+<p>All 50 assessments in the course instance, with the number of distinct questions each
+uses and how many of those appear in the table above.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Assessment</th>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Questions</th>
+      <th>Questions flagged</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/extra_credit_sciviz/infoAssessment.json">Extra Credit 1</a></td>
+      <td>Extra Credit: SciViz</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/extra_credit_word_text_viz/infoAssessment.json">Extra Credit 2</a></td>
+      <td>Extra Credit: Word/Text Viz</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/finalProject_Part1/infoAssessment.json">Final Project 1</a></td>
+      <td>Final Project, Part 1</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/finalProject_Part2/infoAssessment.json">Final Project 2</a></td>
+      <td>Final, Part 2</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/finalProject_Part3.1/infoAssessment.json">Final Project 3.1</a></td>
+      <td>Final, Part 3.1</td>
+      <td>Homework</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/finalProject_Part3.4/infoAssessment.json">Final Project 3.4</a></td>
+      <td>Final, Part 3.4</td>
+      <td>Homework</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework1/infoAssessment.json">Homework 1</a></td>
+      <td>Introduction to PraireLearn, Syllabus Quiz, Intake Survey, and Logging onto Slack</td>
+      <td>Homework</td>
+      <td>30</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework2/infoAssessment.json">Homework 2</a></td>
+      <td>Working with Images and Colors</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework3/infoAssessment.json">Homework 3</a></td>
+      <td>ipywidgets in Python</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework4/infoAssessment.json">Homework 4</a></td>
+      <td>Maps and ipywidgets</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework5_jekyll/infoAssessment.json">Homework 5</a></td>
+      <td>Jekyll Webpage</td>
+      <td>Homework</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/homework6_streamlit/infoAssessment.json">Homework 6</a></td>
+      <td>Streamlit</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week1/infoAssessment.json">InClass 1</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week2/infoAssessment.json">InClass 2</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week3/infoAssessment.json">InClass 3</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week4/infoAssessment.json">InClass 4</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week5/infoAssessment.json">InClass 5</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week6/infoAssessment.json">InClass 6</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week7/infoAssessment.json">InClass 7</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week8/infoAssessment.json">InClass 8</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week9/infoAssessment.json">InClass 9</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week10/infoAssessment.json">InClass 10</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week11/infoAssessment.json">InClass 11</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week12/infoAssessment.json">InClass 12</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week13/infoAssessment.json">InClass 13</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_inclass_week14/infoAssessment.json">InClass 14</a></td>
+      <td>UNGRADED In-class notebook</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab1_pandasPractice/infoAssessment.json">Lab 1</a></td>
+      <td>Pandas Practice</td>
+      <td>Homework</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab2_wget/infoAssessment.json">Lab 2</a></td>
+      <td>Practice with wget and Images</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab3_ipywidgets/infoAssessment.json">Lab 3</a></td>
+      <td>ipywidgets Practice</td>
+      <td>Homework</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab4_github_pages_setup/infoAssessment.json">Lab 4</a></td>
+      <td>Github Pages Setup</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab5_dashboarding/infoAssessment.json">Lab 5</a></td>
+      <td>Dashboarding Practice with bqplot</td>
+      <td>Homework</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab6_installJekyll/infoAssessment.json">Lab 6</a></td>
+      <td>Jekyll Template Upload to GitHub page</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab7_altair/infoAssessment.json">Lab 7</a></td>
+      <td>Altair Practice</td>
+      <td>Homework</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/lab8_installStreamlit/infoAssessment.json">Lab 8</a></td>
+      <td>Streamlit Template on Streamlit.io</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz1_intro_dataOps_beginningColors/infoAssessment.json">Quiz 1</a></td>
+      <td>Introduction, Data Operations; PrairieLearn Labs</td>
+      <td>Exam</td>
+      <td>13</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz2_colors_and_channels/infoAssessment.json">Quiz 2</a></td>
+      <td>Colors and Perception Channels; Reminder about Homework Extension Policies</td>
+      <td>Exam</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz3_ipywidgets_bqplot_GoG_flippedClass/infoAssessment.json">Quiz 3</a></td>
+      <td>ipywidgets, bqplot, Grammar of Graphics</td>
+      <td>Exam</td>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz4_dashboards_and_maps/infoAssessment.json">Quiz 4</a></td>
+      <td>Dashboards and Maps, Choosing Viz Engines</td>
+      <td>Exam</td>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz5_vegaintro_handwavyWebIntro_choosingviz/infoAssessment.json">Quiz 5</a></td>
+      <td>Intro to vega-lite, Hand-wavy intro to the web &amp; Choosing your Viz</td>
+      <td>Exam</td>
+      <td>11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz6_jekyll_finalProject/infoAssessment.json">Quiz 6</a></td>
+      <td>Intro to Jekyll &amp; Final Project</td>
+      <td>Exam</td>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz7_vizAudience/infoAssessment.json">Quiz 7</a></td>
+      <td>Viz Audience</td>
+      <td>Exam</td>
+      <td>9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz8_photorealism_and_graphics_and_publishing/infoAssessment.json">Quiz 8</a></td>
+      <td>Introduction to Graphics and Photorealism, Publishing &amp; Final Project Part 3</td>
+      <td>Exam</td>
+      <td>18</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz9_sciviz/infoAssessment.json">Quiz 9</a></td>
+      <td>Scientific Visualization, bit more about Final Project</td>
+      <td>Exam</td>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/quiz10_networks_and_wordclouds/infoAssessment.json">Quiz 10</a></td>
+      <td>Network Viz and Wordclouds</td>
+      <td>Exam</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week9/infoAssessment.json">VSCode 9</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week10/infoAssessment.json">VSCode 10</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week11/infoAssessment.json">VSCode 11</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week12/infoAssessment.json">VSCode 12</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week13/infoAssessment.json">VSCode 13</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/PrairieLearn/pl-is445/blob/master/courseInstances/Fa26BU/assessments/ungraded_vscode_inclass_week14/infoAssessment.json">VSCode 14</a></td>
+      <td>UNGRADED In-class VSCode Workspace</td>
+      <td>Homework</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="legal-disclaimer">Legal disclaimer</h3>
+
+<p>This document is provided for information purposes only and its contents are subject to
+change without notice. It is offered in good faith, on the basis of the evaluation methods
+described above, and is not a legally binding claim or a warranty of any kind. If you find
+an error in this report or a barrier that is not listed, please contact
+<a href="mailto:jnaiman@illinois.edu">jnaiman@illinois.edu</a>.</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="is-centered columns has-text-centered">
+        <div class="column is-6">
+            <p>
+                This course developed collaboratively by 
+                <a href="https://astronaiman.com/">Jill Naiman</a> and <a href="https://matthewturk.github.io/">Matthew Turk</a>
+		at the University of Illinois Urbana-Champaign
+                <a href="https://ischool.illinois.edu/">School of Information Sciences</a>.
+                The source code is released under a BSD 3-Clause license, allowing for reuse and redistribution.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>

@@ -11,3 +11,7 @@
   id: canvas
   faicon: fa-school
   weight: 50
+- name: Accessibility
+  url: /accessibility_home
+  faicon: fa-universal-access
+  weight: 60

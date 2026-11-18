@@ -1,0 +1,14 @@
+{%- comment -%}
+  Status tag for the accessibility tracking tables.
+  Usage:  {% include a11y_status.html s="todo" %}
+  Values: todo | progress | check | done | none
+  accessibility_home.md counts these tags to draw its progress summary, so
+  always set a status through this include rather than typing the label.
+{%- endcomment -%}
+{%- case include.s -%}
+{%- when "todo" -%}<strong class="tag is-danger is-light status-todo">To do</strong>
+{%- when "progress" -%}<strong class="tag is-link is-light status-progress">In progress</strong>
+{%- when "check" -%}<strong class="tag is-info is-light status-check">Needs check</strong>
+{%- when "done" -%}<strong class="tag is-success is-light status-done">Done</strong>
+{%- else -%}<strong class="tag status-none">No action</strong>
+{%- endcase -%}

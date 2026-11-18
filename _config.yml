@@ -35,9 +35,9 @@ email: jnaiman@illinois.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is the course website for IS445-BCU in Fall 2026
 githuburlbase: "UIUC-iSchool-DataViz"     # GitHub org that owns the course repo
-baseurl: "/is445_bcu_fall2026"            # repo name / subpath of the site
+baseurl: "/is445_accessibility_updates"            # repo name / subpath of the site
 url: "https://uiuc-ischool-dataviz.github.io"  # hostname & protocol, NO trailing slash
-repository: "UIUC-iSchool-DataViz.github.io/is445_bcu_fall2026"  # keep in sync with baseurl
+repository: "UIUC-iSchool-DataViz.github.io/is445_accessibility_updates"  # keep in sync with baseurl
 github_username:  jnaiman
 branch: master
 port: 4009
